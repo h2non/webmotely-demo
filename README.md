@@ -1,6 +1,6 @@
 # Webmotely Demo App
 
-Webmotely is a Web technology that allows you to control remotely Web applications 
+**Webmotely** is a Web technology that allows you to **remote controlling Web applications** 
 
 The project is still a funny proof of concept
 
