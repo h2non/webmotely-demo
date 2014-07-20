@@ -20,7 +20,7 @@
     <script src="http://webmotely.herokuapp.com/primus/primus.io.js"></script>
     <script src="http://rawgit.com/webmotely/webmotely-agent/master/src/webmotely-agent.js"></script>
     <script>
-      var server = webmotely.start()
+      var server = webmotely.start({ server: 'ws://webmotely.herokuapp.com:3000' })
     </script>
 </head>
 <body>
