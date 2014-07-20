@@ -20,7 +20,16 @@
     <script src="http://webmotely.herokuapp.com/primus/primus.io.js"></script>
     <script src="http://rawgit.com/webmotely/webmotely.js/master/src/webmotely.js"></script>
     <script>
-      var server = webmotely.start({ server: 'ws://webmotely.herokuapp.com' })
+      var room = (function () {
+        var room = location.search.match(/room=([\w|\-]+)/)
+        if (room) {
+          return room[1]
+        }
+      }())
+      var server = webmotely.start({ 
+        server: 'ws://webmotely.herokuapp.com',
+        room: room
+      })
     </script>
 </head>
 <body>
